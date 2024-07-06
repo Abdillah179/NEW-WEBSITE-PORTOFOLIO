@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/foto 3.jpeg" type="image/x-icon">
+
+    <title>Portfolio | Ludiflex</title>
+
+    <style>
+       
+
+       .container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-section {
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 80%;
+}
+
+.product-section h2 {
+    margin-top: 0;
+}
+
+.web-page {
+    display: flex;
+    flex-direction: column; /* Add this line */
+    align-items: center;
+}
+
+.web-page img {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 50%;
+    margin-bottom: 10px; /* Add some margin to the bottom for spacing */
+}
+
+.web-page p {
+    max-width: 90%;
+    text-align: center; /* Optional: Center the text */
+}
+
+    </style>
+</head>
+<body>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">My Web Portofolio</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <!-- <div class="nav-button">
+            <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+        </div> -->
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()" style="color: antiquewhite;"></i>
+        </div>
+      </nav>
+
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Muhammad Abdillah Asyhar</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>Experienced back end developer with a passion for creating visually stunning, feature, system and user friendly websites.
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <!-- <button class="btn blue-btn">Hire Me</button>
+                <button class="btn">Download CV <i class="uil uil-file-alt"></i></button> -->
+            </div>
+            <div class="social_icons">
+                <div class="icon"><i class="uil uil-instagram"></i></div>
+                <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                <div class="icon"><i class="uil uil-dribbble"></i></div>
+                <div class="icon"><i class="uil uil-github-alt"></i></div>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="assets/images/foto 1.jpeg" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Down</p>
+            </a>
+          </div>
+
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>My introduction</h3>
+                    <p>I am fluent in HTML, CSS and JavaScript, as well as other advanced frameworks and libraries,
+                        like Laravel, Codeigniter 3, Codeigniter 4 which allows me to implement advanced and interactive features.
+                    </p>
+                    <!-- <div class="about-btn">
+                        <button class="btn">Download CV <i class="uil uil-import"></i></button>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Bootstrap</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>PHP</span>
+                        <span>Python</span>
+                        <span>Laravel</span>
+                        <span>Codeigniter 3</span>
+                        <span>Codeigniter 4</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>MySQL</span>
+                    </div>
+                </div>
+            </div>
+          </div>
+       </section>
+
+       <!-- -------------- PROJECT BOX ---------------- -->
+
+       <section class="section" id="projects">
+          <div class="top-header">
+              <h1>Some Of My Projects</h1>
+          </div>
+          <div class="project-container">
+            <div class="container-2">
+                <div class="product-section">
+                    <h2 style="text-align: center;margin-bottom: 10px;">Membuat Web Penjualan Roti Dan Kue</h2>
+                    <div class="web-page" style="margin-top: 10px;">
+                        <img src="assets/images/foto 1.jpg" alt="Bakery Website">
+                        <p>Web Penjualan roti dan kue ini dibuat agar mempermudah para pengusaha yang bergerak di bidang kuliner terutama di bidang kuliner roti dan kue agar mempercepat proses bisnis dan penjualan nya.</p>
+                    </div>
+                </div>
+                <div class="product-section">
+                    <h2 style="text-align: center;margin-bottom: 10px;">Membuat Web Penjualan Handphone</h2>
+                    <div class="web-page" style="margin-top: 10px;">
+                        <img src="assets/images/foto 2.jpg" alt="Electro Store Website">
+                        <p>Membuat Web Penjualan Handphone Menggunakan Codeigniter 3.</p>
+                    </div>
+                </div>
+                <div class="product-section">
+                    <h2 style="text-align: center;margin-bottom: 10px;">Membuat Web Blog Artikel Menggunakan Laravel</h2>
+                    <div class="web-page" style="margin-top: 10px;">
+                        <img src="assets/images/Screenshot 2024-07-06 153131.jpg" alt="Electro Store Website">
+                        <img src="assets/images/Screenshot 2024-07-06 153200.jpg" alt="Electro Store Website">
+                        <img src="assets/images/Screenshot 2024-07-06 160636.jpg" alt="Electro Store Website">
+                        <p>Web Blog Artikel ini dibuat agar mempermudah para orang-orang untuk berbagi informasi ataupun mendapatkan informasi secara cepat.</p>
+                    </div>
+                </div>
+                <div class="product-section">
+                    <h2 style="text-align: center;margin-bottom: 10px;">Membuat Web Pengelolaan Data Armada Inbound Gudang PT Anugrah Argon Medica</h2>
+                    <div class="web-page" style="margin-top: 10px;">
+                        <img src="assets/images/Screenshot 2024-07-06 182935.jpg" alt="Electro Store Website">
+                        <img src="assets/images/Screenshot 2024-07-06 183329.jpg" alt="Electro Store Website">
+                        <img src="assets/images/Screenshot 2024-07-06 183707.jpg" alt="Electro Store Website">
+                        <img src="assets/images/Screenshot 2024-07-06 183826.jpg" alt="Electro Store Website">
+                        <p>Web Pengelolaan Data ini dibuat agar proses 
+                            penerimaan barang masuk khususnya di point pada saat pencatatan data 
+                            armada shipment dari gudang pengirim (principal), dimana detail data armada 
+                            datang yang tercatat di logbook security gudang bisa diakses oleh beberapa bagian departemen yaitu <span>Inbound NDC, Demand Planner, Principal Dan Finance</span></p>
+                    </div>
+                </div>
+                <div class="product-section">
+                    <h2 style="text-align: center;margin-bottom: 10px;">Membuat Web Penjualan Kopi Gembira Menggunakan Laravel</h2>
+                    <div class="web-page" style="margin-top: 10px;">
+                        <img src="assets/images/Screenshot 2024-07-06 185732.jpg" alt="Electro Store Website">
+                        <img src="assets/images/Screenshot 2024-07-06 185800.jpg" alt="Electro Store Website">
+                        <img src="assets/images/Screenshot 2024-07-06 185829.jpg" alt="Electro Store Website">
+                        <img src="assets/images/Screenshot 2024-07-06 185908.jpg" alt="Electro Store Website">
+                        <img src="assets/images/Screenshot 2024-07-06 190036.jpg" alt="Electro Store Website">
+                        <img src="assets/images/Screenshot 2024-07-06 190108.jpg" alt="Electro Store Website">
+                        <p>Web Kopi Gembira ini dibuat agar mempermudah para pengusaha yang bergerak di bidang kuliner terutama di bidang penjualan Kopi agar mempercepat proses bisnis dan penjualan nya. Didalam Nya Terdapat Fitur Add Keranjang, Tracking Order, Dan Pembayaran Payment Gateway dan lain-lain</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+         
+       </section>
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Contact Me</h1>
+            <span>Contact me here</span>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Contact Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: mabdillahasyhar758@gmail.com</p>
+                    <p><i class="uil uil-phone"></i> Tel: +62 813 8605 2908</p>
+                </div>
+             </div>
+             <div class="col">
+                <div class="form-control">
+                    <form name="portofolio-contact-form">
+                        <div class="form-inputs">
+                            <input type="text" class="input-field" placeholder="Name" name="nama">
+                            <input type="email" class="input-field" placeholder="Email" name="email">
+                        </div>
+                        <div class="text-area">
+                            <textarea placeholder="Message" name="pesan"></textarea>
+                        </div>
+                        <div class="form-button">
+                            <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
+                        </div>
+                    </form>
+                </div>
+             </div>
+          </div>
+       </section>
+
+    </main>
+
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>Muhammad Abdillah Asyhar .</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon"><i class="uil uil-instagram"></i></div>
+            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+            <div class="icon"><i class="uil uil-dribbble"></i></div>
+            <div class="icon"><i class="uil uil-github-alt"></i></div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Muhammad Abdillah Asyhar</a> - All rights reserved</p>
+        </div>
+    </footer>
+
+    </div>
+
+
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+
+
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzN6zEcjpVxI8bk-bKPPkTipK_kg0CDq03kSD8pq7ZmxZG2N5ssGZ8WhczAWtq3nj0xGA/exec'
+const form = document.forms['portofolio-contact-form']
+const button = document.querySelector('.btn')
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    button.disabled = true // Disable the button to prevent multiple submissions
+    button.innerHTML = 'Loading...' // Change button text to 'Loading...'
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            console.log('Success!', response)
+            button.innerHTML = 'Send <i class="uil uil-message"></i>' // Restore button text
+            button.disabled = false // Re-enable the button
+            form.reset() // Clear the form
+            alert('Pesan berhasil terkirim!')
+        })
+        .catch(error => {
+            console.error('Error!', error.message)
+            button.innerHTML = 'Send <i class="uil uil-message"></i>' // Restore button text
+            button.disabled = false // Re-enable the button
+            alert('Terjadi kesalahan, silakan coba lagi.')
+        })
+})
+
+   </script>
+</body>
+</html>
