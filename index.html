@@ -56,6 +56,7 @@
     text-align: center;
 }
 
+
     </style>
 </head>
 <body>
@@ -63,7 +64,7 @@
     <!-- --------------- HEADER --------------- -->
       <nav id="header">
         <div class="nav-logo">
-            <p class="nav-name">Portofolio</p>
+            <p class="nav-name">Portfolio</p>
             <span>.</span>
         </div>
         <div class="nav-menu" id="myNavMenu">
@@ -85,6 +86,10 @@
                     <div class="circle"></div>
                 </li>
             </ul>
+        </div>
+        <div id="languageSwitcher" class="language-switcher">
+            <button id="langEN" onclick="translatePage('en')" class="lang-btn">ENG</button>
+            <button id="langID" onclick="translatePage('id')" class="lang-btn">IND</button>
         </div>
         <!-- <div class="nav-button">
             <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
@@ -137,13 +142,13 @@
        <!-- -------------- ABOUT BOX ---------------- -->
        <section class="section" id="about">
           <div class="top-header">
-            <h1>About Me</h1>
+            <h1 class="top-header-text">About Me</h1>
           </div>
           <div class="row">
             <div class="col">
                 <div class="about-info">
-                    <h3>My introduction</h3>
-                    <p>I am fluent in HTML, CSS and JavaScript, as well as other advanced frameworks and libraries,
+                    <h3 class="about-info-1">My introduction</h3>
+                    <p class="about-info-2">I am fluent in HTML, CSS and JavaScript, as well as other advanced frameworks and libraries,
                         like Laravel, Codeigniter 3, Codeigniter 4 which allows me to implement advanced and interactive features.
                     </p>
                     <!-- <div class="about-btn">
@@ -173,6 +178,7 @@
                         <span>Laravel</span>
                         <span>Codeigniter 3</span>
                         <span>Codeigniter 4</span>
+                        <span>Node.Js</span>
                     </div>
                 </div>
                 <div class="skills-box">
@@ -191,48 +197,45 @@
 
        <section class="section" id="projects">
           <div class="top-header">
-              <h1>My Projects</h1>
+              <h1 class="top-header-project">Some Of My College Projects</h1>
           </div>
           
             <div class="container-2">
                 <div class="product-section">
-                    <h2 style="text-align: center;margin-bottom: 10px;">Membuat Web Penjualan Roti Dan Kue</h2>
-                    <div class="web-page" style="margin-top: 10px;">
+                    <h2 style="text-align: center;margin-bottom: 10px;" class="product-section-1">Create a Bread and Cake Sales Website</h2>
+                    <div class="web-page page-1" style="margin-top: 10px;">
                         <img src="assets/images/foto 1.jpg" alt="Bakery Website">
-                        <p>Web Penjualan roti dan kue ini dibuat agar mempermudah para pengusaha yang bergerak di bidang kuliner terutama di bidang kuliner roti dan kue agar mempercepat proses bisnis dan penjualan nya.</p>
+                        <p class="product-section-2">This bread and cake sales website was created to make it easier for entrepreneurs operating in the culinary sector, especially in the culinary field of bread and cakes, to speed up their business and sales processes.</p>
                     </div>
                 </div>
                 <div class="product-section">
-                    <h2 style="text-align: center;margin-bottom: 10px;">Membuat Web Penjualan Handphone</h2>
+                    <h2 style="text-align: center;margin-bottom: 10px;" class="product-section-3">Creating a Mobile Sales Website</h2>
                     <div class="web-page" style="margin-top: 10px;">
                         <img src="assets/images/foto 2.jpg" alt="Electro Store Website">
-                        <p>Membuat Web Penjualan Handphone Menggunakan Codeigniter 3.</p>
+                        <p class="product-section-4">Creating a Mobile Sales Website Using CodeIgniter 3.</p>
                     </div>
                 </div>
                 <div class="product-section">
-                    <h2 style="text-align: center;margin-bottom: 10px;">Membuat Web Blog Artikel Menggunakan Laravel</h2>
+                    <h2 style="text-align: center;margin-bottom: 10px;" class="product-section-5">Creating Web Blog Articles Using Laravel</h2>
                     <div class="web-page" style="margin-top: 10px;">
                         <img src="assets/images/Screenshot 2024-07-06 153131.jpg" alt="Electro Store Website">
                         <img src="assets/images/Screenshot 2024-07-06 153200.jpg" alt="Electro Store Website">
                         <img src="assets/images/Screenshot 2024-07-06 160636.jpg" alt="Electro Store Website">
-                        <p>Web Blog Artikel ini dibuat agar mempermudah para orang-orang untuk berbagi informasi ataupun mendapatkan informasi secara cepat.</p>
+                        <p class="product-section-6">Web Blog This article was created to make it easier for people to share information or get information quickly.</p>
                     </div>
                 </div>
                 <div class="product-section">
-                    <h2 style="text-align: center;margin-bottom: 10px;">Membuat Web Pengelolaan Data Armada Inbound Gudang PT Anugrah Argon Medica</h2>
+                    <h2 style="text-align: center;margin-bottom: 10px;" class="product-section-7">Creating a Warehouse Inbound Fleet Data Management Web for PT Anugrah Argon Medica</h2>
                     <div class="web-page" style="margin-top: 10px;">
                         <img src="assets/images/Screenshot 2024-07-06 182935.jpg" alt="Electro Store Website">
                         <img src="assets/images/Screenshot 2024-07-06 183329.jpg" alt="Electro Store Website">
                         <img src="assets/images/Screenshot 2024-07-06 183707.jpg" alt="Electro Store Website">
                         <img src="assets/images/Screenshot 2024-07-06 183826.jpg" alt="Electro Store Website">
-                        <p>Web Pengelolaan Data ini dibuat agar proses 
-                            penerimaan barang masuk khususnya di point pada saat pencatatan data 
-                            armada shipment dari gudang pengirim (principal), dimana detail data armada 
-                            datang yang tercatat di logbook security gudang bisa diakses oleh beberapa bagian departemen yaitu <span>Inbound NDC, Demand Planner, Principal Dan Finance</span></p>
+                        <p class="product-section-8">This Data Management Web was created so that the process of receiving incoming goods, especially at the point when recording shipment fleet data from the sending (principal) warehouse, where detailed incoming fleet data recorded in the warehouse security logbook can be accessed by several departments, namely Inbound NDC, Demand Planner, Principal and Finance</span></p>
                     </div>
                 </div>
                 <div class="product-section">
-                    <h2 style="text-align: center;margin-bottom: 10px;">Membuat Web Penjualan Kopi Gembira Menggunakan Laravel</h2>
+                    <h2 style="text-align: center;margin-bottom: 10px;" class="product-section-9">Creating a Happy Coffee Sales Website Using Laravel</h2>
                     <div class="web-page" style="margin-top: 10px;">
                         <img src="assets/images/Screenshot 2024-07-06 185732.jpg" alt="Electro Store Website">
                         <img src="assets/images/Screenshot 2024-07-06 185800.jpg" alt="Electro Store Website">
@@ -240,7 +243,7 @@
                         <img src="assets/images/Screenshot 2024-07-06 185908.jpg" alt="Electro Store Website">
                         <img src="assets/images/Screenshot 2024-07-06 190036.jpg" alt="Electro Store Website">
                         <img src="assets/images/Screenshot 2024-07-06 190108.jpg" alt="Electro Store Website">
-                        <p>Web Kopi Gembira ini dibuat agar mempermudah para pengusaha yang bergerak di bidang kuliner terutama di bidang penjualan Kopi agar mempercepat proses bisnis dan penjualan nya. Didalam Nya Terdapat Fitur Add Keranjang, Tracking Order, Dan Pembayaran Payment Gateway dan lain-lain</p>
+                        <p class="product-section-10">The Kopi Gembira website was created to make it easier for entrepreneurs operating in the culinary sector, especially in the field of coffee sales, to speed up their business and sales processes. In it there are Add Cart Features, Tracking Orders, and Payment Gateway Payments and others</p>
                     </div>
                 </div>
             </div>
@@ -251,13 +254,13 @@
 
        <section class="section" id="contact">
           <div class="top-header">
-            <h1>Contact Me</h1>
-            <span>Contact me here</span>
+            <h1 class="contact-1">Contact Me</h1>
+            <span class="contact-2">Contact me here</span>
           </div>
           <div class="row">
              <div class="col">
                 <div class="contact-info">
-                    <h2>Contact Me <i class="uil uil-corner-right-down"></i></h2>
+                    <h2 class="contact-3">Contact Me <i class="uil uil-corner-right-down"></i></h2>
                     <p><i class="uil uil-envelope"></i> Email: abdillahh3425@gmail.com</p>
                     <p><i class="uil uil-phone"></i> Tel: +62 813 8605 2908</p>
                 </div>
@@ -273,7 +276,7 @@
                             <textarea placeholder="Message" name="pesan"></textarea>
                         </div>
                         <div class="form-button">
-                            <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
+                            <button type="submit" class="btn btn-1">Send</button>
                         </div>
                     </form>
                 </div>
@@ -358,5 +361,93 @@ form.addEventListener('submit', e => {
 })
 
    </script>
+
+<script>
+    const translations = {
+        en: {
+            title: "Portfolio",
+            home: "Home",
+            about: "About",
+            projects: "Projects",
+            contact: "Contact",
+            featured: "Experienced back end developer with a passion for creating visually stunning, feature, system and user friendly websites.",
+            aboutinfo1: "My introduction",
+            aboutinfo2: "I am fluent in HTML, CSS and JavaScript, as well as other advanced frameworks and libraries,like Laravel, Codeigniter 3, Codeigniter 4 which allows me to implement advanced and interactive features.",
+            topheadertext: "About Me",
+            topheaderprojects: "Some Of My College Projects",
+            productsection1: "Create a Bread and Cake Sales Website",
+            productsection2: "This bread and cake sales website was created to make it easier for entrepreneurs operating in the culinary sector, especially in the culinary field of bread and cakes, to speed up their business and sales processes.",
+            productsection3: "Creating a Mobile Sales Website",
+            productsection4: "Creating a Mobile Sales Website Using CodeIgniter 3.",
+            productsection5: "Creating Web Blog Articles Using Laravel",
+            productsection6: "Web Blog This article was created to make it easier for people to share information or get information quickly.",
+            productsection7: "Creating a Warehouse Inbound Fleet Data Management Web for PT Anugrah Argon Medica",
+            productsection8: "This Data Management Web was created so that the process of receiving incoming goods, especially at the point when recording shipment fleet data from the sending (principal) warehouse, where detailed incoming fleet data recorded in the warehouse security logbook can be accessed by several departments, namely Inbound NDC, Demand Planner, Principal and Finance",
+            productsection9: "Creating a Happy Coffee Sales Website Using Laravel",
+            productsection10: "The Kopi Gembira website was created to make it easier for entrepreneurs operating in the culinary sector, especially in the field of coffee sales, to speed up their business and sales processes. In it there are Add Cart Features, Tracking Orders, and Payment Gateway Payments and others",
+            contact1: "Contact Me",
+            contact2: "Contact me here",
+            contact3: "Contact Me",
+            btn1: "Send",
+            // Tambahkan terjemahan lainnya di sini
+        },
+        id: {
+            title: "Portofolio",
+            home: "Beranda",
+            about: "Tentang",
+            projects: "Proyek",
+            contact: "Kontak",
+            featured: "Pengembang back end berpengalaman dengan hasrat untuk membuat situs web yang memukau secara visual, fitur dan sistem, serta ramah untuk pengguna.",
+            aboutinfo1: "Perkenalan Saya",
+            aboutinfo2: "Saya fasih dalam HTML, CSS dan JavaScript, serta kerangka kerja dan perpustakaan tingkat lanjut lainnya,seperti Laravel, Codeigniter 3, Codeigniter 4 dan lain-lain yang memungkinkan saya mengimplementasikan fitur-fitur canggih dan interaktif.",
+            topheadertext: "Tentang Saya",
+            topheaderprojects: "Beberapa Projek Kuliah Saya",
+            productsection1: "Membuat Website Penjualan Roti dan Kue",
+            productsection2: "Web Penjualan roti dan kue ini dibuat agar mempermudah para pengusaha yang bergerak di bidang kuliner terutama di bidang kuliner roti dan kue agar mempercepat proses bisnis dan penjualan nya.",
+            productsection3: "Membuat Web Penjualan Handphone",
+            productsection4: "Membuat Web Penjualan Handphone Menggunakan Codeigniter 3.",
+            productsection5: "Membuat Web Blog Artikel Menggunakan Laravel",
+            productsection6: "Web Blog Artikel ini dibuat agar mempermudah para orang-orang untuk berbagi informasi ataupun mendapatkan informasi secara cepat.",
+            productsection7: "Membuat Web Pengelolaan Data Armada Inbound Gudang Untuk PT Anugrah Argon Medica",
+            productsection8: "Web Pengelolaan Data ini dibuat agar proses penerimaan barang masuk khususnya di point pada saat pencatatan data armada shipment dari gudang pengirim (principal), dimana detail data armada datang yang tercatat di logbook security gudang bisa diakses oleh beberapa bagian departemen yaitu Inbound NDC, Demand Planner, Principal Dan Finance",
+            productsection9: "Membuat Web Penjualan Kopi Gembira Menggunakan Laravel",
+            productsection10: "Web Kopi Gembira ini dibuat agar mempermudah para pengusaha yang bergerak di bidang kuliner terutama di bidang penjualan Kopi agar mempercepat proses bisnis dan penjualan nya. Didalam Nya Terdapat Fitur Add Keranjang, Tracking Order, Dan Pembayaran Payment Gateway dan lain-lain",
+            contact1: "Hubungi Saya",
+            contact2: "Hubungi Saya Disini",
+            contact3: "Hubungi Saya",
+            btn1: "Kirim",
+            // Tambahkan terjemahan lainnya di sini
+        }
+    };
+
+    function translatePage(language) {
+        document.title = translations[language].title;
+        document.querySelector('.nav-name').textContent = translations[language].title;
+        document.querySelector('a[href="#home"]').textContent = translations[language].home;
+        document.querySelector('a[href="#about"]').textContent = translations[language].about;
+        document.querySelector('a[href="#projects"]').textContent = translations[language].projects;
+        document.querySelector('a[href="#contact"]').textContent = translations[language].contact;
+        document.querySelector('.featured-text-info').textContent = translations[language].featured;
+        document.querySelector('.about-info-1').textContent = translations[language].aboutinfo1;
+        document.querySelector('.about-info-2').textContent = translations[language].aboutinfo2;
+        document.querySelector('.top-header-text').textContent = translations[language].topheadertext;
+        document.querySelector('.top-header-project').textContent = translations[language].topheaderprojects;
+        document.querySelector('.product-section-1').textContent = translations[language].productsection1;
+        document.querySelector('.product-section-2').textContent = translations[language].productsection2;
+        document.querySelector('.product-section-3').textContent = translations[language].productsection3;
+        document.querySelector('.product-section-4').textContent = translations[language].productsection4;
+        document.querySelector('.product-section-5').textContent = translations[language].productsection5;
+        document.querySelector('.product-section-6').textContent = translations[language].productsection6;
+        document.querySelector('.product-section-7').textContent = translations[language].productsection7;
+        document.querySelector('.product-section-8').textContent = translations[language].productsection8;
+        document.querySelector('.product-section-9').textContent = translations[language].productsection9;
+        document.querySelector('.product-section-10').textContent = translations[language].productsection10;
+        document.querySelector('.contact-1').textContent = translations[language].contact1;
+        document.querySelector('.contact-2').textContent = translations[language].contact2;
+        document.querySelector('.contact-3').textContent = translations[language].contact3;
+        document.querySelector('.btn-1').textContent = translations[language].btn1;
+        // Tambahkan elemen lainnya di sini
+    }
+</script>
 </body>
 </html>
