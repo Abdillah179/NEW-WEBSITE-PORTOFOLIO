@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
     <!-- --------- CSS ---------- -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css" id="themeStylesheet">
 
     <!-- --------- FAVICON ---------- -->
     <link rel="shortcut icon" href="assets/images/foto 3.jpeg" type="image/x-icon">
@@ -17,47 +17,70 @@
     <title>My Portofolio</title>
 
     <style>
-       
-
-    .container-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        /* Gaya untuk toggle switch */
+.switch {
+  margin-left: 10px; /* Tambahkan margin kiri 10px */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  flex-shrink: 0;
 }
 
-.product-section {
-    background-color: #F8F8F8;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    padding: 20px;
-    width: 80%;
+.switch input {
+    opacity: 0; /* Sembunyikan checkbox */
+    width: 0;
+    height: 0;
 }
 
-.product-section h2 {
-    margin-top: 0;
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px; /* Sesuaikan radius */
 }
 
-.web-page {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px; /* Ukuran lingkaran lebih kecil */
+    width: 16px; /* Ukuran lingkaran lebih kecil */
+    left: 2px; /* Posisi kiri lebih kecil */
+    bottom: 2px; /* Posisi bawah lebih kecil */
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
 }
 
-.web-page img {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    max-width: 100%;
-    margin-bottom: 10px; 
+input:checked + .slider {
+    background-color: #2196F3;
 }
 
-.web-page p {
-    max-width: 90%;
-    text-align: center;
+input:checked + .slider:before {
+    transform: translateX(20px); /* Gerakan lebih kecil */
 }
 
+@media (max-width: 768px) {
+  .switch {
+    position: relative;
+    bottom: 50px; /* Ubah nilai bottom sesuai kebutuhan */
+    left: 50%;
+    transform: translateX(-68%);
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+}
 
     </style>
+
 </head>
 <body>
    <div class="container">
@@ -70,26 +93,28 @@
         <div class="nav-menu" id="myNavMenu">
             <ul class="nav_menu_list">
                 <li class="nav_list">
-                    <a href="#home" class="nav-link active-link">Home</a>
-                    <div class="circle"></div>
+                    <a href="#home" class="nav-link">Home</a>
                 </li>
                 <li class="nav_list">
                     <a href="#about" class="nav-link">About</a>
-                    <div class="circle"></div>
                 </li>
                 <li class="nav_list">
                     <a href="#projects" class="nav-link">Projects</a>
-                    <div class="circle"></div>
                 </li>
                 <li class="nav_list">
                     <a href="#contact" class="nav-link">Contact</a>
-                    <div class="circle"></div>
+                </li>
+                <li class="nav-link">
+                    <div class="switch" onclick="toggleTheme()">
+                        <input type="checkbox" id="toggleInput">
+                        <span class="slider"></span>
+                    </div>
                 </li>
             </ul>
         </div>
         <div id="languageSwitcher" class="language-switcher">
-            <button id="langEN" onclick="translatePage('en')" class="lang-btn">ENG</button>
-            <button id="langID" onclick="translatePage('id')" class="lang-btn">IND</button>
+            <button id="langEN" onclick="translatePage('en')" class="lang-btn active">EN</button>
+            <button id="langID" onclick="translatePage('id')" class="lang-btn">IDN</button>
         </div>
         <!-- <div class="nav-button">
             <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
@@ -292,7 +317,7 @@
         <div class="top-footer">
           <p>Muhammad Abdillah Asyhar.</p>
         </div>
-        <div class="middle-footer">
+        <!-- <div class="middle-footer">
           <ul class="footer-menu">
             <li class="footer_menu_list">
               <a href="#home">Home</a>
@@ -307,7 +332,7 @@
               <a href="#contact">Contact</a>
             </li>
           </ul>
-        </div>
+        </div> -->
         <div class="footer-social-icons">
           <div class="icon"><i class="uil uil-instagram"></i></div>
           <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
@@ -332,6 +357,24 @@
 
     <!-- ----- MAIN JS ----- -->
     <script src="assets/js/main.js"></script>
+
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const langEN = document.getElementById('langEN');
+    const langID = document.getElementById('langID');
+
+    langEN.addEventListener('click', function() {
+        langEN.classList.add('active');
+        langID.classList.remove('active');
+    });
+
+    langID.addEventListener('click', function() {
+        langEN.classList.remove('active');
+        langID.classList.add('active');
+    });
+});
+
+   </script>
 
 
    <script>
@@ -449,5 +492,24 @@ form.addEventListener('submit', e => {
         // Tambahkan elemen lainnya di sini
     }
 </script>
+
+
+<script>
+const toggleInput = document.getElementById('toggleInput');
+const themeStylesheet = document.getElementById('themeStylesheet');
+
+function toggleTheme() {
+    toggleInput.checked = !toggleInput.checked; // Toggle checkbox state
+    if (toggleInput.checked) {
+        themeStylesheet.setAttribute('href', 'assets/css/style.css'); // Ubah ke dark mode
+    } else {
+        themeStylesheet.setAttribute('href', 'assets/css/style2.css'); // Kembali ke light mode
+    }
+}
+
+
+</script>
+
+
 </body>
 </html>
